@@ -1,108 +1,76 @@
 <html>
-<title></title>
-<head>
-  <link rel="stylesheet" href="css/maunen.css" media="all">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!--navigation full body-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container"> <!--container ra giua-->
-                        <a class="navbar-brand" href="#">FRONT END DEVELOPER K53A2</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                  <li class="nav-item active">
-                                    <a class="nav-link" href="#">Trang Chủ
-                                    </a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Hòm Thư</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Phản Hồi</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Liên Hệ</a>
-                                  </li>
-                                </ul>
-                                <form class="form-inline my-2">
-                                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                  <button class="btn  btn-primary my-2 my-sm-0" type="submit">Search</button>
-                                </form>
-                          </div>
-                          
-                </div>
-        </nav>   
+    <title></title>
+    <head></head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/carousel.css" rel="stylesheet">
+        <script src="js/jquery-3.3.1.min.js"></script> <!--phai de truoc file jquery mình tạo ra-->
+        <script src="js/carousel.js"></script> <!--file jqeury mình tạo ra-->
+    <body>
         <div class="container">
-                <!-- Heading Row -->
-                <div class="row my-4">
-                  <div class="col-lg-8">
-                    <img src="../chup-den6.jpg" alt="ảnh không thể hiển thị" class="image-fluid rounded">
-                  </div>
-                  <!-- /.col-lg-8 -->
-                  <div class="col-lg-4">
-                    <h1>Business Name or Tagline</h1>
-                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                    <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
-                  </div>
-                  <!-- /.col-md-4 -->
+            <div class="row">
+                <div class="col-md-2">
+                        <a href="#"><span class="previewlink align-middle">PREVIEW</span></a>
                 </div>
-                <!-- /.end row -->
-          
-                <!-- create thẻ card , text trắng , background , cách top , bot 4px , căn text ra giữa-->
-                    <div class="card text-white bg-secondary my-4 text-center"><!--cách top , bot 4px-->
-                        <div class="card-body"><!--m-0 để xóa kế thừa cách top , bot 4px ở class trên-->
-                          <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
-                        </div>
-                      </div>
-                <!-- Content Row -->
-                <div class="row">
-                  <!--cold-md-4-->
-                  <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <h2 class="card-title">Card One</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                      </div>
-                      <div class="card-footer">
-                        <a href="#" class="btn btn-primary">More Info</a>
-                      </div>
+                <div class="col-md-8">
+                    <div class="carousel-inner">
+                                <img class="img-show" src="img/slide1.png">
+                                <img class="img-hiden" src="img/slide2.png">
+                                <img class="img-hiden" src="img/slide3.gif">
+                                <img class="img-hiden" src="img/slide4.gif">
                     </div>
-                  </div>
-                  <!-- /.col-md-4 -->
-                  <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <h2 class="card-title">Card Two</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-                      </div>
-                      <div class="card-footer">
-                        <a href="#" class="btn btn-primary">More Info</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.col-md-4 -->
-                  <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <h2 class="card-title">Card Three</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                      </div>
-                      <div class="card-footer">
-                        <a href="#" class="btn btn-primary">More Info</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.col-md-4 -->
                 </div>
-                <!-- /.row -->
-          <div class="maunen">css tu tao</div>
-              </div>     
-</body>
+                <div class="col-md-2">
+                        <a href="#"><span class="nextlink align-middle">NEXT</span></a>
+                </div>
+            </div>
+        </div>  
+
+        <!--GET DATA FORM TO OBJIECT IN JQUERY-->
+        <div class="container">
+        <form class="form-horizontal" id="formregister">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="hoten">Họ Tên:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="hoten" placeholder="họ tên">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="cmt">Số CMTND:</label>
+              <div class="col-sm-10"> 
+                <input type="text" class="form-control" id="cmt" placeholder="số CMTND">
+              </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="tencty">Tên Cty:</label>
+                <div class="col-sm-10"> 
+                  <input type="text" class="form-control" id="tencty" placeholder="Tên Cty Làm Việc">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="age">Tuổi:</label>
+                <div class="col-sm-10"> 
+                  <input type="text" class="form-control" id="age" placeholder="Tuổi">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="male">Nam:</label>
+                <div class="col-sm-10"> 
+                  <input type="radio" name="gioitinh" id="male">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="fermale" value="0">Nữ:</label>
+                <div class="col-sm-10"> 
+                  <input type="radio" name="gioitinh" id="fermale" value="1">
+                </div>
+              </div>
+            <div class="form-group"> 
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" id="btnregister" class="btn btn-default">Submit</button>
+              </div>
+            </div>
+          </form>
+          </div>
+        <!--FORM DATA NV-->
+    </body>
 </html>
